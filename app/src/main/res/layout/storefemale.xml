@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="159dp"
+            android:layout_height="112dp"
+            app:srcCompat="@drawable/tennis"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="-2dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Rackets"
+            app:layout_constraintStart_toStartOf="@id/imageView3"
+            app:layout_constraintTop_toBottomOf="@id/imageView3"
+            app:srcCompat="@drawable/racketclipart" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="173dp"
+            android:layout_height="177dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Full Uniform"
+            app:layout_constraintStart_toStartOf="@id/imageView3"
+            app:layout_constraintTop_toBottomOf="@id/imageButton"
+            app:srcCompat="@drawable/femaleclothes" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="173dp"
+            android:layout_height="164dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Tennis Balls"
+            app:layout_constraintStart_toStartOf="@id/imageView3"
+            app:layout_constraintTop_toBottomOf="@id/imageButton2"
+            app:srcCompat="@drawable/tennisballs" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rackets"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton"
+            app:layout_constraintStart_toEndOf="@id/imageButton"
+            app:layout_constraintTop_toTopOf="@id/imageButton" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Uniform"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton2"
+            app:layout_constraintStart_toEndOf="@id/imageButton2"
+            app:layout_constraintTop_toTopOf="@id/imageButton2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tennis Balls"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton4"
+            app:layout_constraintStart_toEndOf="@id/imageButton4"
+            app:layout_constraintTop_toTopOf="@id/imageButton4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
